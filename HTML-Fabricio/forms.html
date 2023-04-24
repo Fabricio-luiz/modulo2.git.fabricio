@@ -7,6 +7,53 @@
     <title>Forms</title>
 </head>
 <body>
-    
+    <h1>Formulários</h1>
+    <form> <!--Tag para trabalharmos com formularios-->
+        <!-- <input type="" + CTRL + Espaço para verificar os campos-->
+        <!--Alguns dos campos principais abaixo-->
+
+        <input type="text" placeholder="Seu nome" /> <!--Placeholder indica o que queremos no campo-->
+        <br/>
+        <label for="email">Seu E-mail</label> <!--Na tag Label, conseguimos selecionar o campo, para isso add
+        o atributo FOR que recebe o ID do capo-->
+        <input id="email" type="email"/> <!--No campo email precisamos add esse ID-->
+        <br/>
+        <input type="tel" placeholder="Seu Telefone" /> <!--inseri numero de telefone-->
+        <br/>
+        <input type="number" max="10" min="2" step="2" /> <!--Contagem de numeros-->
+        <br />
+        <input type="file" /> <!--anexar arquivos-->
+        <br />
+        <input type="color" /> <!--Caixa de seleção de cor-->
+        <br />
+        <input type="checkbox" id="checkbox-termos" /> <label for="checkbox-termos">Aceito os termos</label> <!--
+            campo de seleção, caixa de marcação-->
+        <br />
+        <p>
+            Qual sua cor Favorita?
+        </p>
+        <input type="radio" name="cor" id="azul" /> <label for="azul">Azul</label>
+        <input type="radio" name="cor" id="verde" /> <label for="verde">Verde</label>
+        <br/>
+        <label>Qual seu filme favorito</label>
+        <select multiple> <!--caixa de opções/combo box-->
+            <option>Filme A</option>
+            <option>Filme B</option>
+            <option>Filme C</option>
+        </select>
+        <br/>
+        <textarea></textarea> <!--inseri caixa de texto-->
+        <br/>
+        <botton type="submit"> <!--atributo para enviar formulario-->
+            Enviar
+        </botton>
+        <botton type="reset"> <!--atributo para apagar-->
+            Limpar
+        </botton>
+
+
+
+
+    </form>
 </body>
 </html>
